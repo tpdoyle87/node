@@ -12,18 +12,16 @@ const titleOption = (describe) => {
   }
 }
 
-const bodyOption = () => {
-  return {
+const bodyOption = {
     describe: 'Message of note',
     demand: true,
     alias: 'b'
-  }
-}
+  };
 
 const argv = yargs
   .command('add', 'Add a new note', {
     title: titleOption('Title of note to be added'),
-    body: bodyOption()
+    body: bodyOption
 
   })
   .command('list', 'Lists all the notes')
