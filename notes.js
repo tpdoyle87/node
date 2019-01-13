@@ -1,4 +1,3 @@
-console.log('starting from notes.js')
 const fs = require('fs')
 
 const fetchNotes = () => {
@@ -31,7 +30,7 @@ const addNote = (title, body) => {
 }
 
 const getAll = () => {
-  console.log('getting all notes')
+  return fetchNotes();
 }
 
 const getNote = (title) => {
@@ -52,8 +51,6 @@ const printNote = (note) => {
     console.log(`Title: ${note.title}`)
     console.log(`Body: ${note.body}`)
 }
-
-
 
 module.exports = {
   addNote,

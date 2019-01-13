@@ -2,7 +2,7 @@ const person = {
   name: 'Andrew'
 }
 
-person.age = 25;
+person.age = 31;
 
 debugger;
 
